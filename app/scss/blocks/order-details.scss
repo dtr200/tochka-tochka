@@ -17,8 +17,11 @@
         grid-template-rows: 68px 24px 68px;
         row-gap: 16px;
     }
-    &--hiden-child{
+    &--hidden-child{
         grid-template-rows: 68px 24px;
+    }
+    &--map{
+        gap: 4px;
     }
 }
 

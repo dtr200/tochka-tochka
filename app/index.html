@@ -112,18 +112,34 @@
             </fieldset>
             <fieldset class="order-form__order-details order-details">
                 <legend class="order-details__title section-title section-title--mark" data-num="4">Время</legend>
-                <ul class="order-details__list">
+                <ul class="order-details__list order-details__list--map">
                     <li class="order-details__item input-field">
                         <div class="input-field__title-wrapper">
                             <label for="when" class="input-field__title">Когда прибыть на точку</label>
                             <label for="distance" class="input-field__subtitle">700 км в день</label>
-                        </div>                        
-                        <input type="text" class="input-field__place" id="when">
+                        </div>
+                        <div class="input-field__place-wrapper input-field__place-wrapper--address-one">
+                            <div class="input-field__overlay">
+                                <input type="text" class="input-field__place input-field__place--address" id="when" value="Длинный адрес с градиентом">
+                            </div>                            
+                            <button class="input-field__button">НЕ ВЫБРАНО</button>
+                        </div>
                     </li>
                     <li class="order-details__item input-field">
-                        <input type="text" class="input-field__place" id="distance">
+                        <div class="input-field__place-wrapper input-field__place-wrapper--address-two">
+                            <div class="input-field__overlay">
+                                <input type="text" class="input-field__place input-field__place--address" id="distance" value="Адрес не указан">
+                            </div>                            
+                            <button class="input-field__button">НЕ ВЫБРАНО</button>
+                        </div>
                     </li>
                 </ul>
+            </fieldset>
+            <fieldset class="order-form__order-details order-details">
+                <div class="input-field__title-wrapper">
+                    <label for="comment" class="input-field__title">Комментарий к заказу</label>
+                </div>                        
+                <textarea class="input-field__textarea" id="comment" rows="4" placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
             </fieldset>
         </form>
     </main>

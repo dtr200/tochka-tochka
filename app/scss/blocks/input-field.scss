@@ -33,6 +33,56 @@
     &--inline{
         max-width: $inline-width;
     }
+    &--address{
+        background: linear-gradient(to right, $semi-grey 48%, $dark-light 58%, $dark-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-left: 36px;
+        margin-bottom: 0;
+    }
+}
+
+.input-field__overlay{
+    background-color: $dark-light;
+}
+
+.input-field__place-wrapper{
+    position: relative;
+    &--address-one::before,
+    &--address-two::before{
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        top: 14px;
+        left: 12px;
+    }
+    &--address-one::before{
+        background: radial-gradient(circle at center, transparent, transparent 4px, $red 4px, $red);
+    }
+    &--address-two::before{
+        background: radial-gradient(circle at center, transparent, transparent 4px, $white 4px, $white);
+    }
+}
+
+.input-field__button{
+    width: 119px;
+    height: 24px;
+    background-color: $semi-dark;
+    border: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: .3;
+    color: $white;
+    outline: none;
+    @include font($size: $label-size, $height: $label-line-height);
+    &:hover{
+        opacity: 1;
+    }
 }
 
 .input-field__list{    
@@ -59,4 +109,12 @@
 .input-field__list-item{
     @include font($size: $list-text-size, $height: $list-line-height);
         color: $black;
+}
+
+.input-field__textarea{
+    width: 100%;
+    outline: none;
+    @include font($size: $main-text-size, $height: $main-line-height);
+    padding: 13px 14px;
+    box-sizing: border-box;
 }

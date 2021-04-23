@@ -1,5 +1,5 @@
 const toggle = () => {
-    const checkbox = document.querySelector('.checkbox');
+    const checkbox = document.querySelector('.checkbox__title');
     const items = document.querySelectorAll('.order-details__item--dynamic');
 
     const toggleEvent = () => {
