@@ -1,0 +1,8 @@
+.help-message{
+    background-color: $dark-light;
+    padding: 24px;
+}
+
+.help-message__text{
+    @include font($size: $main-text-size, $height: $main-line-height);
+}

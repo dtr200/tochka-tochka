@@ -109,6 +109,10 @@
 .input-field__list-item{
     @include font($size: $list-text-size, $height: $list-line-height);
         color: $black;
+    &:hover{
+        background-color: $red;
+        color: $white;
+    }
 }
 
 .input-field__textarea{
@@ -117,4 +121,5 @@
     @include font($size: $main-text-size, $height: $main-line-height);
     padding: 13px 14px;
     box-sizing: border-box;
+    color: $silver;
 }
