@@ -1,0 +1,21 @@
+@mixin flex($just: normal, $direct: row, $align: normal, $basis: auto){
+    display: flex;
+    justify-content: $just;
+    flex-direction: $direct;
+    align-items: $align;
+    flex-basis: $basis;
+}
+
+@mixin text($align: left, $color: inherit, $trans: inherit, $decor: inherit){
+    text-align: $align;
+    color: $color;
+    text-transform: $trans;
+    text-decoration: $decor;    
+}
+
+@mixin font($size: inherit, $weight: inherit, $height: inherit, $space: normal){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $space;
+}

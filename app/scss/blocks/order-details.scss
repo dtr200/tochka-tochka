@@ -1,0 +1,34 @@
+.order-details{
+    
+}
+
+.order-details__title{
+    margin-bottom: 16px;
+}
+
+.order-details__list{
+    display: grid;
+    column-gap: 12px;
+    &--inline{        
+        grid-template-columns: repeat(2, minmax(135px, $inline-width));
+    }
+    &--high{
+        grid-template-columns: repeat(2, minmax(135px, $inline-width));
+        grid-template-rows: 68px 24px 68px;
+        row-gap: 16px;
+    }
+    &--hiden-child{
+        grid-template-rows: 68px 24px;
+    }
+}
+
+.order-details__item{
+    &--second-row{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-template-rows: 100px;
+    }
+    &--hide{
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+.page-header{
+    max-width: $width;
+    &--position{
+        padding: 40px 16px 0;
+    }
+}
+
+.page-header__title{    
+    font-size: $h1-size;
+    margin-bottom: 20px;
+}
+
+@media(min-width: 992px){
+    .page-header{
+        &--position{
+            padding: 40px 0 0 170px;
+        }
+    }
+}

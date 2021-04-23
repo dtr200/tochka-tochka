@@ -1,0 +1,28 @@
+.checkbox{
+    list-style-type: none;
+    @include flex($align: center);
+}
+
+.checkbox__input-field{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &:checked+.input-field__title--checkbox::before{
+        content: '';
+        background: $red url('/images/check.png') center no-repeat;
+        border: none;
+        transition: background-color .2s, border .2s;
+    }
+}
+.checkbox__title{
+    @include flex($align: center);
+    &::before{
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border: 2px solid $white;
+        box-sizing: border-box;
+        margin-right: 18px;
+    }
+}

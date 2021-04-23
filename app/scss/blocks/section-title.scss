@@ -1,0 +1,17 @@
+.section-title{
+    position: relative;
+    left: 32px;
+    @include font($size: $legend-size, $height: $legend-line-height);
+
+    &--mark::before{
+        content: attr(data-num);
+        @include flex($align: center, $just: center);
+        width: 24px;
+        height: 24px;
+        background-color: $red;
+        @include font($size: $legend-mark-size, $weight: bold, $height: $legend-mark-line-height);
+        border-radius: 50%;
+        position: absolute;
+        left: -32px;
+    }
+}

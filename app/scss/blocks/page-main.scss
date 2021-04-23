@@ -1,0 +1,14 @@
+.page-main{
+    max-width: $width;
+    &--position{
+        padding: 0 16px;
+    }
+}
+
+@media(min-width: 992px){
+    .page-main{
+        &--position{
+            padding-left: 170px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.input-field{
+    list-style-type: none;
+}
+.input-field__title,
+.input-field__subtitle{
+    @include font($size: $label-size, $height: $label-line-height);
+}
+
+.input-field__title{
+    
+}
+
+.input-field__title-wrapper{
+    @include flex($just: space-between);
+    margin-bottom: 8px;
+}
+
+.input-field__place,
+.input-field__list{
+    width: 100%;
+    height: 44px;
+    padding-left: 14px;
+    @include font($size: $main-text-size, $height: $main-line-height);    
+    border: none;
+    box-sizing: border-box;
+}
+
+.input-field__place{    
+    margin-bottom: 16px;
+    &::placeholder{
+        color: $silver;
+    }
+    &--inline{
+        max-width: $inline-width;
+    }
+}
+
+.input-field__list{    
+    outline: none;
+    appearance: none;
+    color: $silver;
+}
+
+.input-field__list-wrapper{
+    display: flex;
+    position: relative;
+    &::after{
+        content: '';
+        display: block;
+        background: url('/images/arrow.png');
+        width: 8px;
+        height: 5px;
+        position: absolute;
+        right: 19px;
+        top: 20px;
+    }
+}
+
+.input-field__list-item{
+    @include font($size: $list-text-size, $height: $list-line-height);
+        color: $black;
+}
