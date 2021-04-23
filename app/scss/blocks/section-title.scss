@@ -15,3 +15,9 @@
         left: -32px;
     }
 }
+
+@media (min-width: 992px){
+    .section-title{
+        @include font($size: $legend-desktop-size, $weight: bold, $height: $legend-desktop-line-height);
+    }
+}

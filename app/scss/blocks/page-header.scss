@@ -16,4 +16,7 @@
             padding: 40px 0 0 170px;
         }
     }
+    .page-header__title{    
+        @include font($size: $h1-desktop-size, $weight: bold);
+    }
 }

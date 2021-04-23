@@ -1,5 +1,4 @@
 .page-main{
-    max-width: $width;
     &--position{
         padding: 0 16px 37px;
     }
@@ -10,5 +9,14 @@
         &--position{
             padding-left: 170px;
         }
+    }
+}
+
+@media(min-width: 1286px){
+    .page-main{
+        display: grid;
+        grid-template-columns: $width minmax(343px, 356px);
+        column-gap: 16px;
+        align-items: self-start;
     }
 }

@@ -1,8 +1,13 @@
 .help-message{
+    max-width: 356px;
     background-color: $dark-light;
     padding: 24px;
 }
 
 .help-message__text{
     @include font($size: $main-text-size, $height: $main-line-height);
+}
+
+@media (min-width: 1286px){
+    
 }
