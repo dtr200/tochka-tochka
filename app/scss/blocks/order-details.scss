@@ -4,6 +4,9 @@
 
 .order-details__title{
     margin-bottom: 16px;
+    &--top{
+        top: 15px;
+    }
 }
 
 .order-details__list{

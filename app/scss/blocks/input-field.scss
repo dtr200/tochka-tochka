@@ -3,7 +3,13 @@
 }
 .input-field__title,
 .input-field__subtitle{
-    @include font($size: $label-size, $height: $label-line-height);
+    @include font($size: $label-size, $height: $label-line-height, $space: .3px);
+}
+
+.input-field__subtitle{
+    position: relative;
+    top: 3px;
+    letter-spacing: .2px;
 }
 
 .input-field__title-wrapper{
@@ -38,7 +44,8 @@
         -webkit-text-fill-color: transparent;
         padding-left: 36px;
         margin-bottom: 0;   
-        outline: none;     
+        outline: none;
+        letter-spacing: .3px;
     }
 }
 
@@ -80,21 +87,11 @@
     color: $white;
     outline: none;
     cursor: pointer;
-    @include font($size: $label-size, $height: $label-line-height);
+    @include font($size: $list-text-size, $height: $label-line-height, $space: .25px);
     &:hover{
         opacity: 1;
     }
 }
-
-/* .input-field__list{    
-    outline: none;
-    appearance: none;
-    color: $silver;
-    cursor: pointer;
-    & > option:hover {
-        background-color: red;
-    }
-} */
 
 .input-field__list{
     outline: none;
@@ -159,11 +156,6 @@
     }
 }
 
-/* .input-field__list-item{
-    @include font($size: $list-text-size, $height: $list-line-height);
-    color: $black;
-} */
-
 .input-field__list-item{
     padding: 5px 12px 6px;
     background-color: $white;
@@ -179,7 +171,7 @@
 .input-field__textarea{
     width: 100%;
     outline: none;
-    @include font($size: $main-text-size, $height: $main-line-height);
+    @include font($size: $main-text-size, $height: $main-line-height, $space: .25px);
     padding: 13px 14px;
     box-sizing: border-box;
     

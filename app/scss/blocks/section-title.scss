@@ -1,7 +1,7 @@
 .section-title{
     position: relative;
     left: 32px;
-    @include font($size: $legend-size, $weight: bold, $height: $legend-line-height);
+    @include font($size: $legend-size, $weight: bold, $height: $legend-line-height, $space: .3px);
 
     &--mark::before{
         content: attr(data-num);
