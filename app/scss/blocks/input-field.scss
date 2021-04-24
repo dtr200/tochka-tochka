@@ -148,6 +148,7 @@
     position: absolute;
     top: 13px;
     left: 12px;
+    white-space: nowrap;   
     &--selected{
         color: $black;
     }

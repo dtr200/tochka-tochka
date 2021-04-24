@@ -31,7 +31,30 @@
         grid-column-end: 3;
         grid-template-rows: 100px;
     }
-    &--hide{
+    &--hide,
+    &--desktop{
         display: none;
+    }
+}
+
+@media(min-width: 992px){
+    .order-details__list{
+        &--high{
+            grid-template-columns: repeat(2, minmax(135px, $inline-width));
+            grid-template-rows: 68px 68px 24px 68px;
+            row-gap: 16px;
+        }
+        &--hidden-child{
+            grid-template-rows: 68px 68px 24px;
+        }
+    }
+    .order-details__item{
+        &--type{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        &--desktop{
+            display: block;
+        }
     }
 }
