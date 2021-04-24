@@ -37,23 +37,43 @@
                     <li class="order-details__item input-field">
                         <div class="input-field__title-wrapper">
                             <label for="lifting" class="input-field__title">Грузоподъёмность</label>
+                        </div>
+                        <div class="input-field__list-container">
+                            <span class="input-field__display">Не выбрана</span>
+                            <ul class="input-field__list input-field__list--hide">
+                                <li class="input-field__list-item">Вариант 1</li>
+                                <li class="input-field__list-item">Вариант 2</li>
+                                <li class="input-field__list-item">Вариант 3</li>
+                                <li class="input-field__list-item">Вариант 4</li>
+                                <li class="input-field__list-item">Вариант 5</li>
+                            </ul> 
                         </div>                        
-                        <div class="input-field__list-wrapper">
+                        <!-- <div class="input-field__list-wrapper">                            
                             <select class="input-field__list" name="" id="lifting" select="selected">
                                 <option selected hidden>Не выбрана</option>
-                                <option class="input-field__list-item" value="Вариант 1">Вариант 1</option>
-                                <option class="input-field__list-item" value="Вариант 2">Вариант 2</option>
-                                <option class="input-field__list-item" value="Вариант 3">Вариант 3</option>
-                                <option class="input-field__list-item" value="Вариант 4">Вариант 4</option>
-                                <option class="input-field__list-item" value="Вариант 5">Вариант 5</option>
-                            </select>
-                        </div>
+                                <option class="input-field__list-item">Вариант 1</option>
+                                <option class="input-field__list-item">Вариант 2</option>
+                                <option class="input-field__list-item">Вариант 3</option>
+                                <option class="input-field__list-item">Вариант 4</option>
+                                <option class="input-field__list-item">Вариант 5</option>
+                            </select>                                                       
+                        </div> -->
                     </li>
                     <li class="order-details__item input-field">
                         <div class="input-field__title-wrapper">
                             <label for="method" class="input-field__title">Способ погрузки</label>
-                        </div>                        
-                        <div class="input-field__list-wrapper">
+                        </div>
+                        <div class="input-field__list-container">
+                            <span class="input-field__display input-field__display--selected">Задняя</span>
+                            <ul class="input-field__list input-field__list--hide">
+                                <li class="input-field__list-item">Вариант 1</li>
+                                <li class="input-field__list-item">Вариант 2</li>
+                                <li class="input-field__list-item">Вариант 3</li>
+                                <li class="input-field__list-item">Вариант 4</li>
+                                <li class="input-field__list-item">Вариант 5</li>
+                            </ul> 
+                        </div>                         
+                        <!-- <div class="input-field__list-wrapper">
                             <select class="input-field__list" name="" id="method" select="selected">
                                 <option selected hidden>Задняя</option>
                                 <option class="input-field__list-item" value="Вариант 1">Вариант 1</option>
@@ -62,7 +82,7 @@
                                 <option class="input-field__list-item" value="Вариант 4">Вариант 4</option>
                                 <option class="input-field__list-item" value="Вариант 5">Вариант 5</option>
                             </select>
-                        </div>
+                        </div> -->
                     </li>
                 </ul>
             </fieldset>
@@ -72,8 +92,18 @@
                     <li class="order-details__item input-field">
                         <div class="input-field__title-wrapper">
                             <label for="type" class="input-field__title">Тип груза</label>
-                        </div>                        
-                        <div class="input-field__list-wrapper">
+                        </div>
+                        <div class="input-field__list-container">
+                            <span class="input-field__display">Не выбран</span>
+                            <ul class="input-field__list input-field__list--hide">
+                                <li class="input-field__list-item">Вариант 1</li>
+                                <li class="input-field__list-item">Вариант 2</li>
+                                <li class="input-field__list-item">Вариант 3</li>
+                                <li class="input-field__list-item">Вариант 4</li>
+                                <li class="input-field__list-item">Вариант 5</li>
+                            </ul> 
+                        </div>                          
+                        <!-- <div class="input-field__list-wrapper">
                             <select class="input-field__list" name="" id="type" select="selected">
                                 <option selected hidden>Не выбран</option>
                                 <option class="input-field__list-item" value="Вариант 1">Вариант 1</option>
@@ -82,7 +112,7 @@
                                 <option class="input-field__list-item" value="Вариант 4">Вариант 4</option>
                                 <option class="input-field__list-item" value="Вариант 5">Вариант 5</option>
                             </select>
-                        </div>
+                        </div> -->
                     </li>
                     <li class="order-details__item input-field">
                         <div class="input-field__title-wrapper">
@@ -110,7 +140,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="order-form__order-details order-details">
+            <fieldset class="order-form__order-details order-form__order-details--last order-details">
                 <legend class="order-details__title section-title section-title--mark" data-num="4">Время</legend>
                 <ul class="order-details__list order-details__list--map">
                     <li class="order-details__item input-field">
@@ -147,6 +177,6 @@
                 Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
             </p>
         </aside>
-    </main>
+    </main>    
 </body>
 </html>

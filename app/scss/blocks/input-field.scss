@@ -27,6 +27,9 @@
 
 .input-field__place{    
     margin-bottom: 16px;
+    &:hover{
+        outline: 2px solid black;
+    }
     &::placeholder{
         color: $silver;
     }
@@ -38,7 +41,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding-left: 36px;
-        margin-bottom: 0;
+        margin-bottom: 0;   
+        outline: none;     
     }
 }
 
@@ -79,16 +83,37 @@
     opacity: .3;
     color: $white;
     outline: none;
+    cursor: pointer;
     @include font($size: $label-size, $height: $label-line-height);
     &:hover{
         opacity: 1;
     }
 }
 
-.input-field__list{    
+/* .input-field__list{    
     outline: none;
     appearance: none;
     color: $silver;
+    cursor: pointer;
+    & > option:hover {
+        background-color: red;
+    }
+} */
+
+.input-field__list{
+    outline: none;
+    appearance: none;
+    color: $silver;
+    cursor: pointer;
+    list-style-type: none;
+    position: absolute;
+    padding-left: 0;
+    top: 44px;
+    z-index: 1;
+
+    &--hide{
+        display: none;
+    }
 }
 
 .input-field__list-wrapper{
@@ -105,10 +130,44 @@
         top: 20px;
     }
 }
+.input-field__list-container{
+    height: 44px;
+    background-color: $white;
+    position: relative;
+    cursor: pointer;
+    &::after{
+        content: '';
+        display: block;
+        background: url('/images/arrow.png');
+        width: 8px;
+        height: 5px;
+        position: absolute;
+        right: 19px;
+        top: 20px;
+    }
+}
+
+.input-field__display{
+    color: $silver;
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    &--selected{
+        color: $black;
+    }
+}
+
+/* .input-field__list-item{
+    @include font($size: $list-text-size, $height: $list-line-height);
+    color: $black;
+} */
 
 .input-field__list-item{
+    padding: 5px 12px 6px;
+    background-color: $white;
     @include font($size: $list-text-size, $height: $list-line-height);
-        color: $black;
+    color: $black;
+
     &:hover{
         background-color: $red;
         color: $white;
@@ -122,4 +181,7 @@
     padding: 13px 14px;
     box-sizing: border-box;
     color: $silver;
+    &:hover{
+        outline: 2px solid black;
+    }
 }

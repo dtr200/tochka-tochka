@@ -19,5 +19,8 @@
 @media (min-width: 992px){
     .section-title{
         @include font($size: $legend-desktop-size, $weight: bold, $height: $legend-desktop-line-height);
+        &--mark::before{
+            top: 3px;
+        }
     }
 }

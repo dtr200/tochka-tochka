@@ -5,4 +5,7 @@
 .order-form__order-details{
     border: none;
     margin-bottom: 24px;
+    &--last{
+        margin-bottom: 16px;
+    }
 }
