@@ -148,7 +148,12 @@
     position: absolute;
     top: 13px;
     left: 12px;
-    white-space: nowrap;   
+    white-space: nowrap;
+    &--fade{
+        background: linear-gradient(to right, black, black 20%, transparent 27%, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;  
+    }     
     &--selected{
         color: $black;
     }
