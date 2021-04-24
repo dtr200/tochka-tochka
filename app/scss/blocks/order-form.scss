@@ -12,3 +12,12 @@
         padding-top: 15px;
     }
 }
+
+@media(min-width: 992px){
+    .order-form__order-details{
+        &--top{
+            padding-top: 18px;
+            margin-bottom: 40px;
+        }
+    }
+}

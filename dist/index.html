@@ -5,9 +5,174 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>Delivery</title>
+    <script defer src="js/main.js"></script>
 </head>
 <body>
-    
+    <header class="page-header page-header--position">
+        <h1 class="page-header__title">FTL: Прямая машина</h1>
+    </header>
+    <main class="page-main page-main--position">
+        <form action="#" class="page-main__order-form order-form">
+            <fieldset class="order-form__order-details order-details">
+                <legend class="order-details__title section-title section-title--mark" data-num="1">Маршрут</legend>
+                <ul class="order-details__list">
+                    <li class="order-details__item input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="from" class="input-field__title">Откуда</label>
+                        </div>                        
+                        <input type="text" class="input-field__place" id="from">
+                    </li>
+                    <li class="order-details__item input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="to" class="input-field__title">Куда</label>
+                        </div>                        
+                        <input type="text" class="input-field__place" id="to">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="order-form__order-details order-details">
+                <legend class="order-details__title section-title section-title--mark" data-num="2">Транспорт</legend>
+                <ul class="order-details__list order-details__list--inline">
+                    <li class="order-details__item input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="lifting" class="input-field__title">Грузоподъёмность</label>
+                        </div>
+                        <div class="input-field__list-container">
+                            <span class="input-field__display">Не выбрана</span>
+                            <ul class="input-field__list input-field__list--hide">
+                                <li class="input-field__list-item">Вариант 1</li>
+                                <li class="input-field__list-item">Вариант 2</li>
+                                <li class="input-field__list-item">Вариант 3</li>
+                                <li class="input-field__list-item">Вариант 4</li>
+                                <li class="input-field__list-item">Вариант 5</li>
+                            </ul> 
+                        </div>                        
+                        <!-- <div class="input-field__list-wrapper">                            
+                            <select class="input-field__list" name="" id="lifting" select="selected">
+                                <option selected hidden>Не выбрана</option>
+                                <option class="input-field__list-item">Вариант 1</option>
+                                <option class="input-field__list-item">Вариант 2</option>
+                                <option class="input-field__list-item">Вариант 3</option>
+                                <option class="input-field__list-item">Вариант 4</option>
+                                <option class="input-field__list-item">Вариант 5</option>
+                            </select>                                                       
+                        </div> -->
+                    </li>
+                    <li class="order-details__item input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="method" class="input-field__title">Способ погрузки</label>
+                        </div>
+                        <div class="input-field__list-container">
+                            <span class="input-field__display input-field__display--selected">Задняя</span>
+                            <ul class="input-field__list input-field__list--hide">
+                                <li class="input-field__list-item">Вариант 1</li>
+                                <li class="input-field__list-item">Вариант 2</li>
+                                <li class="input-field__list-item">Вариант 3</li>
+                                <li class="input-field__list-item">Вариант 4</li>
+                                <li class="input-field__list-item">Вариант 5</li>
+                            </ul> 
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="order-form__order-details order-form__order-details--top order-details">
+                <legend class="order-details__title order-details__title--top section-title section-title--mark" data-num="3">Груз</legend>
+                <ul class="order-details__list order-details__list--hidden-child order-details__list--high order-details__list--inline">
+                    <li class="order-details__item order-details__item--type input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="type" class="input-field__title">Тип груза</label>
+                        </div>
+                        <div class="input-field__list-container">
+                            <span class="input-field__display">Не выбран</span>
+                            <ul class="input-field__list input-field__list--hide">
+                                <li class="input-field__list-item">Вариант 1</li>
+                                <li class="input-field__list-item">Вариант 2</li>
+                                <li class="input-field__list-item">Вариант 3</li>
+                                <li class="input-field__list-item">Вариант 4</li>
+                                <li class="input-field__list-item">Вариант 5</li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li class="order-details__item order-details__item--desktop input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="type" class="input-field__title">Класс опасности</label>
+                        </div>
+                        <div class="input-field__list-container">
+                            <span class="input-field__display input-field__display--fade">Класс 5 — Окисляющие вещества и органические перекиси
+                            </span>
+                            <ul class="input-field__list input-field__list--hide">
+                                <li class="input-field__list-item">Вариант 1</li>
+                                <li class="input-field__list-item">Вариант 2</li>
+                                <li class="input-field__list-item">Вариант 3</li>
+                                <li class="input-field__list-item">Вариант 4</li>
+                                <li class="input-field__list-item">Вариант 5</li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li class="order-details__item input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="value" class="input-field__title">Объявленная ценность, ₽</label>
+                        </div>                        
+                        <input type="text" class="input-field__place" id="value" placeholder="≥ 1">
+                    </li>
+                    <li class="order-details__item 
+                    order-details__item--second-row
+                 checkbox">
+                        <input type="checkbox" class="checkbox__input-field" id="temp">                       
+                        <label for="temp" class="input-field__title input-field__title--checkbox checkbox__title">Требуется температурный режим</label>
+                    </li>
+                    <li class="order-details__item order-details__item--dynamic order-details__item--hide input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="value" class="input-field__title">От, °C</label>
+                        </div>                        
+                        <input type="text" class="input-field__place" id="value" value="-20">
+                    </li>
+                    <li class="order-details__item order-details__item--dynamic order-details__item--hide input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="value" class="input-field__title">До, °C</label>
+                        </div>                        
+                        <input type="text" class="input-field__place" id="value" value="+23">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="order-form__order-details order-form__order-details--last order-details">
+                <legend class="order-details__title section-title section-title--mark" data-num="4">Время</legend>
+                <ul class="order-details__list order-details__list--map">
+                    <li class="order-details__item input-field">
+                        <div class="input-field__title-wrapper">
+                            <label for="when" class="input-field__title">Когда прибыть на точку</label>
+                            <label for="distance" class="input-field__subtitle">700 км в день</label>
+                        </div>
+                        <div class="input-field__place-wrapper input-field__place-wrapper--address-one">
+                            <div class="input-field__overlay">
+                                <input type="text" class="input-field__place input-field__place--address" id="when" value="Длинный адрес с градиентом">
+                            </div>                            
+                            <button class="input-field__button">НЕ ВЫБРАНО</button>
+                        </div>
+                    </li>
+                    <li class="order-details__item input-field">
+                        <div class="input-field__place-wrapper input-field__place-wrapper--address-two">
+                            <div class="input-field__overlay">
+                                <input type="text" class="input-field__place input-field__place--address" id="distance" value="Адрес не указан">
+                            </div>                            
+                            <button class="input-field__button">НЕ ВЫБРАНО</button>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="order-form__order-details order-details">
+                <div class="input-field__title-wrapper">
+                    <label for="comment" class="input-field__title">Комментарий к заказу</label>
+                </div>                        
+                <textarea class="input-field__textarea" id="comment" rows="3" placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+            </fieldset>
+        </form>
+        <aside class="help-message">
+            <p class="help-message__text">
+                Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+            </p>
+        </aside>
+    </main>    
 </body>
 </html>

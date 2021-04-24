@@ -135,7 +135,7 @@
         width: 8px;
         height: 5px;
         position: absolute;
-        right: 19px;
+        right: 16px;
         top: 20px;
     }
 }
@@ -144,7 +144,7 @@
     color: $silver;
     position: absolute;
     top: 13px;
-    left: 12px;
+    left: 13px;
     white-space: nowrap;
     &--fade{
         background: linear-gradient(to right, black, black 20%, transparent 27%, transparent);
@@ -180,5 +180,13 @@
     }
     &:hover{
         outline: 2px solid black;
+    }
+}
+
+@media(min-width: 992px){
+    .input-field__display{
+        &--fade{
+            letter-spacing: -.28px;
+        }
     }
 }

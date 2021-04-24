@@ -8,6 +8,13 @@
     @include font($size: $main-text-size, $height: $main-line-height, $space: .25px);
 }
 
-@media (min-width: 1286px){
-    
+@media (min-width: 992px){
+    .help-message{
+        padding: 24px;
+        position: relative;
+        top: 2px;
+    }
+    .help-message__text{
+        letter-spacing: .3px;
+    }
 }

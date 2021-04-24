@@ -13,10 +13,11 @@
 @media(min-width: 992px){
     .page-header{
         &--position{
-            padding: 40px 0 0 170px;
+            padding: 44px 0 0 168px;
         }
     }
     .page-header__title{    
         @include font($size: $h1-desktop-size, $weight: bold);
+        margin-bottom: 18px;
     }
 }

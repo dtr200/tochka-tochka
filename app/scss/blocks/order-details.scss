@@ -41,6 +41,12 @@
 }
 
 @media(min-width: 992px){
+    .order-details__title{
+        margin-bottom: 15px;
+        &--top{
+            top: 18px;
+        }
+    }
     .order-details__list{
         &--high{
             grid-template-columns: repeat(2, minmax(135px, $inline-width));
