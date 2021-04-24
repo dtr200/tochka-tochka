@@ -6,10 +6,6 @@
     @include font($size: $label-size, $height: $label-line-height);
 }
 
-.input-field__title{
-    
-}
-
 .input-field__title-wrapper{
     @include flex($just: space-between);
     margin-bottom: 8px;
@@ -180,7 +176,10 @@
     @include font($size: $main-text-size, $height: $main-line-height);
     padding: 13px 14px;
     box-sizing: border-box;
-    color: $silver;
+    
+    &::placeholder{
+        color: $silver;
+    }
     &:hover{
         outline: 2px solid black;
     }
